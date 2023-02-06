@@ -1,0 +1,11 @@
+#! /bin/bash
+
+declare -A BG
+BG["day"]="https://cdnb.artstation.com/p/assets/images/images/043/250/687/4k/arseniy-chebynkin-kagome-room-day.jpg"
+BG["sunset"]="https://cdna.artstation.com/p/assets/images/images/043/497/486/4k/arseniy-chebynkin-kagome-room-sunset.jpg"
+BG["sunset-v2"]="https://cdnb.artstation.com/p/assets/images/images/043/498/245/4k/arseniy-chebynkin-kagome-room-sunset-v2.jpg"
+BG["night-light"]="https://cdna.artstation.com/p/assets/images/images/043/636/132/4k/arseniy-chebynkin-kagome-room-night-light.jpg"
+BG["night-minilamp"]="https://cdna.artstation.com/p/assets/images/images/043/636/138/4k/arseniy-chebynkin-kagome-room-night-minilamp.jpg"
+BG["night-corridor"]="https://cdna.artstation.com/p/assets/images/images/043/636/142/4k/arseniy-chebynkin-kagome-room-night-coridor.jpg"
+BG["night-moonlight"]="https://cdna.artstation.com/p/assets/images/images/043/636/140/4k/arseniy-chebynkin-kagome-room-night-moonlight.jpg"
+export BG

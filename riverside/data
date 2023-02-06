@@ -1,0 +1,9 @@
+#! /bin/bash
+
+# The following URL returns a 2500x1504 image, but the others return 1080p ones.
+# BG["sunset"]="https://cdnb.artstation.com/p/assets/images/images/040/383/685/4k/arseniy-chebynkin-riverside-sunset.jpg"
+declare -A BG
+BG["day"]="https://cdnb.artstation.com/p/assets/images/images/010/220/917/4k/arseniy-chebynkin-riverside.jpg"
+BG["sunset"]="https://cdnb.artstation.com/p/assets/images/images/040/383/977/large/arseniy-chebynkin-riverside-sunset.jpg?1628690683"
+BG["night"]="https://cdnb.artstation.com/p/assets/images/images/011/377/869/4k/arseniy-chebynkin-riversidenight.jpg"
+export BG

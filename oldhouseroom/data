@@ -1,0 +1,15 @@
+#! /bin/bash
+
+# The "day" variant has a odd resolution of 1900x1069, so the "/medium"
+# resolution of 1600x900 is necessary.
+# BG["day"]="https://cdnb.artstation.com/p/assets/images/images/002/613/321/4k/arseniy-chebynkin-lmrbg.jpg"
+# BG["sunset"]="https://cdnb.artstation.com/p/assets/images/images/005/667/101/4k/arseniy-chebynkin-ggroom-sunset.jpg"
+# BG["evening"]="https://cdnb.artstation.com/p/assets/images/images/007/669/191/4k/arseniy-chebynkin-ggrooml.jpg"
+# BG["night"]="https://cdna.artstation.com/p/assets/images/images/007/669/192/4k/arseniy-chebynkin-ggroomnnl.jpg"
+
+declare -A BG
+BG["day"]="https://cdnb.artstation.com/p/assets/images/images/002/613/321/medium/arseniy-chebynkin-lmrbg.jpg"
+BG["sunset"]="https://cdnb.artstation.com/p/assets/images/images/005/667/101/medium/arseniy-chebynkin-ggroom-sunset.jpg"
+BG["evening"]="https://cdnb.artstation.com/p/assets/images/images/007/669/191/medium/arseniy-chebynkin-ggrooml.jpg"
+BG["night"]="https://cdna.artstation.com/p/assets/images/images/007/669/192/medium/arseniy-chebynkin-ggroomnnl.jpg"
+export BG

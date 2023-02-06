@@ -1,0 +1,12 @@
+#! /bin/bash
+
+# The /4k option returns an image larger than all the other ones, so use /large
+# instead.
+# BG["night-nolight"]="https://cdnb.artstation.com/p/assets/images/images/043/114/769/4k/arseniy-chebynkin-restora-ext-night-no-light.jpg"
+
+declare -A BG
+BG["day"]="https://cdnb.artstation.com/p/assets/images/images/010/399/523/4k/arseniy-chebynkin-restor.jpg"
+BG["sunset"]="https://cdnb.artstation.com/p/assets/images/images/013/569/207/4k/arseniy-chebynkin-restran-sunset.jpg"
+BG["night"]="https://cdna.artstation.com/p/assets/images/images/013/569/282/4k/arseniy-chebynkin-redtornight.jpg"
+BG["night-nolight"]="https://cdnb.artstation.com/p/assets/images/images/043/114/769/large/arseniy-chebynkin-restora-ext-night-no-light.jpg"
+export BG

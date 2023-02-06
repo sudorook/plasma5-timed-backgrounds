@@ -1,0 +1,6 @@
+#! /bin/bash
+
+declare -A BG
+BG["earlymorning"]="https://www.camposanto.com/external/wallpapers/Launch_Green/FWG_2560x1600.jpg"
+BG["sunset"]="https://www.camposanto.com/external/wallpapers/Launch_OriginalColors/FWO_2560x1600.jpg"
+export BG

@@ -1,0 +1,8 @@
+#! /bin/bash
+
+declare -A BG
+BG["morning"]="https://cdnb.artstation.com/p/assets/images/images/052/009/523/4k/arseniy-chebynkin-ba-ext-morning.jpg"
+BG["day"]="https://cdnb.artstation.com/p/assets/images/images/052/009/535/4k/arseniy-chebynkin-ba-ext-day.jpg"
+BG["sunset"]="https://cdnb.artstation.com/p/assets/images/images/052/009/531/4k/arseniy-chebynkin-ba-ext-sunset.jpg"
+BG["night"]="https://cdna.artstation.com/p/assets/images/images/052/009/526/4k/arseniy-chebynkin-ba-ext-night.jpg"
+export BG

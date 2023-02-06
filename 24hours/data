@@ -1,0 +1,15 @@
+#! /bin/bash
+
+# Original, full-resolution URLS (the h_xxx fields were changed for day and
+# evening):
+# - morning: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/b004022a-ab22-428e-a926-0cbe968e1a9a/d5okwvu-f494f051-fa8e-4010-aa89-2356e78b61bf.jpg/v1/fill/w_2600,h_5831,q_100,strp/24hoursmorning_by_arzamas_d5okwvu-fullview.jpg
+# - day: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/b004022a-ab22-428e-a926-0cbe968e1a9a/d5okwz0-af29ce26-ffb4-4b82-9a0e-190aeddcfe5d.jpg/v1/fill/w_2600,h_5855,q_100,strp/24hoursday_by_arzamas_d5okwz0-fullview.jpg
+# - evening: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/b004022a-ab22-428e-a926-0cbe968e1a9a/d5okx4w-dd559d26-b8c8-4407-8e8b-539832398a10.jpg/v1/fill/w_2600,h_5857,q_100,strp/24hoursevening_by_arzamas_d5okx4w-fullview.jpg
+# - night: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/b004022a-ab22-428e-a926-0cbe968e1a9a/d5okx7r-45d4749d-0ee8-4671-977b-4edf964c00bf.jpg/v1/fill/w_2600,h_5831,q_100,strp/24hoursnight_by_arzamas_d5okx7r-fullview.jpg
+
+declare -A BG
+BG["morning"]="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/b004022a-ab22-428e-a926-0cbe968e1a9a/d5okwvu-f494f051-fa8e-4010-aa89-2356e78b61bf.jpg/v1/fill/w_2600,h_5831,q_100,strp/24hoursmorning_by_arzamas_d5okwvu-fullview.jpg"
+BG["day"]="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/b004022a-ab22-428e-a926-0cbe968e1a9a/d5okwz0-af29ce26-ffb4-4b82-9a0e-190aeddcfe5d.jpg/v1/fill/w_2600,h_5831,q_100,strp/24hoursday_by_arzamas_d5okwz0-fullview.jpg"
+BG["evening"]="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/b004022a-ab22-428e-a926-0cbe968e1a9a/d5okx4w-dd559d26-b8c8-4407-8e8b-539832398a10.jpg/v1/fill/w_2600,h_5831,q_100,strp/24hoursevening_by_arzamas_d5okx4w-fullview.jpg"
+BG["night"]="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/b004022a-ab22-428e-a926-0cbe968e1a9a/d5okx7r-45d4749d-0ee8-4671-977b-4edf964c00bf.jpg/v1/fill/w_2600,h_5831,q_100,strp/24hoursnight_by_arzamas_d5okx7r-fullview.jpg"
+export BG

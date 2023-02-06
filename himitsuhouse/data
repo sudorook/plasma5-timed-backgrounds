@@ -1,0 +1,11 @@
+#! /bin/bash
+
+# The variant without the rain puddles (from 2017) does not have a
+# higher-resolution version avaialble, so use the other one.
+# BG["sunset"]="https://cdnb.artstation.com/p/assets/images/images/007/820/059/4k/arseniy-chebynkin-himisunset.jpg"
+
+declare -A BG
+BG["day"]="https://cdnb.artstation.com/p/assets/images/images/041/440/799/4k/arseniy-chebynkin-himi-day.jpg"
+BG["sunset"]="https://cdna.artstation.com/p/assets/images/images/041/708/322/4k/arseniy-chebynkin-himi-sunset.jpg"
+BG["night"]="https://cdnb.artstation.com/p/assets/images/images/041/440/757/4k/arseniy-chebynkin-himi-night.jpg"
+export BG

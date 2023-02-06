@@ -1,0 +1,6 @@
+#! /bin/bash
+
+declare -A BG
+BG["day"]="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/549e9b77-4c90-4c7f-8d0e-772a4ba70576/d6ctqon-dd7e1ce9-c232-4723-a9e9-fd8c71608588.jpg"
+BG["night"]="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/549e9b77-4c90-4c7f-8d0e-772a4ba70576/d6cz757-170fb93c-919b-470a-b156-b836e67fc3fb.jpg"
+export BG
