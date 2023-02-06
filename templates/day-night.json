@@ -1,0 +1,12 @@
+{
+    "Type": "day-night",
+    "Meta": [
+        {
+            "TimeOfDay": "day",
+            "FileName": "day"
+        }, {
+            "TimeOfDay": "night",
+            "FileName": "night"
+        }
+    ]
+}

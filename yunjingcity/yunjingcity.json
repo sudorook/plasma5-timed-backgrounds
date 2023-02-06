@@ -1,0 +1,12 @@
+{
+    "Type": "day-night",
+    "Meta": [
+        {
+            "TimeOfDay": "day",
+            "FileName": "yunjingcity-day.jpg"
+        }, {
+            "TimeOfDay": "night",
+            "FileName": "yunjingcity-night.jpg"
+        }
+    ]
+}

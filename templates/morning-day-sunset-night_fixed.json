@@ -1,0 +1,36 @@
+{
+    "Type": "solar",
+    "Meta": [
+        {
+            "SolarAzimuth": 0,
+            "SolarElevation": -90,
+            "CrossFade": false,
+            "Time": "05:00",
+            "FileName": "night"
+        }, {
+            "SolarAzimuth": 90,
+            "SolarElevation": -6,
+            "CrossFade": false,
+            "Time": "06:00",
+            "FileName": "morning"
+        }, {
+            "SolarAzimuth": 90,
+            "SolarElevation": 12,
+            "CrossFade": false,
+            "Time": "07:00",
+            "FileName": "day"
+        }, {
+            "SolarAzimuth": 270,
+            "SolarElevation": 12,
+            "CrossFade": false,
+            "Time": "17:00",
+            "FileName": "sunset"
+        }, {
+            "SolarAzimuth": 270,
+            "SolarElevation": -6,
+            "CrossFade": false,
+            "Time": "18:00",
+            "FileName": "night"
+        }
+    ]
+}

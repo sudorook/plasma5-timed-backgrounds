@@ -1,0 +1,13 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "daemon@nullcodon.com",
+                "Name": "sudorook"
+            }
+        ],
+        "Id": "Timed",
+        "License": "GPLv2",
+        "Name": "Timed"
+    }
+}
