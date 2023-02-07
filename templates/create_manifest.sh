@@ -9,13 +9,18 @@ function make_manifest {
   local file="${1}"
   local suffix
   local name="${NAME}"
+  local newmanifest
   if [[ "${name}" =~ \-4k ]]; then
     # name="$(echo "${name}" | sed -e "s/-4k//g")"
     name="${name//-4k/}"
     suffix=4k
   fi
-  sed -e "s/\(\"FileName\":\) \"\(.*\)\"/\1 \"${name}-\2${suffix:+-${suffix}}\.${IMG}\"/g" \
-    "${file}" > "${DIR}/${NAME}.json"
+  newmanifest="$(sed -e "s/\(\"FileName\":\) \"\(.*\)\"/\1 \"${name}-\2${suffix:+-${suffix}}\.${IMG}\"/g" "${file}")"
+  if diff <(echo "${newmanifest}") "${DIR}/${NAME}.json" >/dev/null; then
+    echo "No changes to ${DIR}/${NAME}.json."
+  else
+    echo "${newmanifest}" > "${DIR}/${NAME}.json"
+  fi
 }
 
 OPTIONS=d:n:i:t:
