@@ -20,6 +20,7 @@ function make_manifest {
     echo "No changes to ${DIR}/${NAME}.json."
   else
     echo "${newmanifest}" > "${DIR}/${NAME}.json"
+    echo "Updated ${DIR}/${NAME}.json."
   fi
 }
 
