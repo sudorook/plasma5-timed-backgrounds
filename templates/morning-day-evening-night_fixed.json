@@ -9,25 +9,25 @@
             "FileName": "night"
         }, {
             "SolarAzimuth": 90,
-            "SolarElevation": -6,
+            "SolarElevation": -4.5,
             "CrossFade": false,
             "Time": "06:00",
             "FileName": "morning"
         }, {
             "SolarAzimuth": 90,
-            "SolarElevation": 12,
+            "SolarElevation": 16.5,
             "CrossFade": false,
             "Time": "07:00",
             "FileName": "day"
         }, {
             "SolarAzimuth": 270,
-            "SolarElevation": 12,
+            "SolarElevation": 16.5,
             "CrossFade": false,
             "Time": "17:00",
             "FileName": "evening"
         }, {
             "SolarAzimuth": 270,
-            "SolarElevation": -6,
+            "SolarElevation": -4.5,
             "CrossFade": false,
             "Time": "18:00",
             "FileName": "night"
