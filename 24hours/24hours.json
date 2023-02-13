@@ -9,25 +9,25 @@
             "FileName": "24hours-night.jpg"
         }, {
             "SolarAzimuth": 90,
-            "SolarElevation": -6,
+            "SolarElevation": -4.5,
             "CrossFade": false,
             "Time": "06:00",
             "FileName": "24hours-morning.jpg"
         }, {
             "SolarAzimuth": 90,
-            "SolarElevation": 12,
+            "SolarElevation": 16.5,
             "CrossFade": false,
             "Time": "07:00",
             "FileName": "24hours-day.jpg"
         }, {
             "SolarAzimuth": 270,
-            "SolarElevation": 12,
+            "SolarElevation": 16.5,
             "CrossFade": false,
             "Time": "17:00",
             "FileName": "24hours-evening.jpg"
         }, {
             "SolarAzimuth": 270,
-            "SolarElevation": -6,
+            "SolarElevation": -4.5,
             "CrossFade": false,
             "Time": "18:00",
             "FileName": "24hours-night.jpg"

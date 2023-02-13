@@ -21,7 +21,7 @@
             "FileName": "corporationstreet-day.jpg"
         }, {
             "SolarAzimuth": 270,
-            "SolarElevation": 12,
+            "SolarElevation": 6,
             "CrossFade": true,
             "Time": "18:00",
             "FileName": "corporationstreet-sunset.jpg"
