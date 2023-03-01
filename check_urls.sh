@@ -15,6 +15,7 @@ DIRS=(24hours
   japanesevillagehouseinterior
   jrstation
   kagomeroom
+  kumoha103train
   kyosukeroom
   mechanicalcity
   michaelroom

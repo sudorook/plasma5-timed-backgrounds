@@ -18,6 +18,7 @@ DIRS = \
 	japanesevillagehouseinterior \
 	jrstation \
 	kagomeroom \
+	kumoha103train \
 	kyosukeroom \
 	mechanicalcity \
 	metropolis \

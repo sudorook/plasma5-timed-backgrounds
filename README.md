@@ -20,6 +20,7 @@ Available backgrounds:
  * Japanese Village House Interior (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
  * JR Station (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
  * Kagome Room (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
+ * Kumoha 103 Train (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
  * Kyosuke Room (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
  * Mechanical City (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
  * Metropolis (by [arsenixc](https://arsenixc.deviantart.com/gallery/))

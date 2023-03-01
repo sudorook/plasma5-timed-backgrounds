@@ -16,6 +16,7 @@ set -eu
 ./templates/create_manifest.sh -d japanesevillagehouseinterior -t morning-day-sunset-night
 ./templates/create_manifest.sh -d jrstation -t day-sunset-night
 # ./templates/create_manifest.sh -d kagomeroom
+./templates/create_manifest.sh -d kumoha103train -t day-night
 ./templates/create_manifest.sh -d kyosukeroom -t day-sunset-night
 ./templates/create_manifest.sh -d mechanicalcity -t day-night
 ./templates/create_manifest.sh -d metropolis -t day-night
