@@ -38,10 +38,12 @@ function download_bg {
   if [ -f "${dir}/data" ]; then
     source "${dir}/data"
     for key in "${!BG[@]}"; do
-      wget --quiet --show-progress -N -c -O "${dir}/${dir}-${key}.jpg" "${BG[${key}]}"
-      # sleep "$((RANDOM % 5 + 5))"
+      if wget --quiet --show-progress -nc -c -O "${dir}/${dir}-${key}.jpg" "${BG[${key}]}"; then
+        sleep "$((RANDOM % 5 + 5))"
+      else
+        echo "'${dir}/${dir}-${key}.jpg' already exists."
+      fi
     done
-    sleep "$((RANDOM % 5 + 5))"
   else
     echo "No data file in ${dir@Q}. Skipping..."
   fi
