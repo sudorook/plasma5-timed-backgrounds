@@ -25,6 +25,7 @@ DIRS=(24hours
   restaurantinterior
   restaurantstreet
   riverside
+  riversidebridge
   ryokanroom
   smalljapaneseprovincialtown
   streetclub

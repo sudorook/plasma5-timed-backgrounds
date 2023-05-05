@@ -30,6 +30,7 @@ DIRS = \
 	restaurantinterior \
 	restaurantstreet \
 	riverside \
+	riversidebridge \
 	ryokanroom \
 	smalljapaneseprovincialtown \
 	streetclub \

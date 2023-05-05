@@ -28,6 +28,7 @@ set -eu
 # ./templates/create_manifest.sh -d restaurantinterior
 # ./templates/create_manifest.sh -d restaurantstreet
 ./templates/create_manifest.sh -d riverside -t day-sunset-night
+./templates/create_manifest.sh -d riversidebridge -t day-night
 # ./templates/create_manifest.sh -d ryokanroom
 ./templates/create_manifest.sh -d smalljapaneseprovincialtown -t morning-day-sunset-night
 ./templates/create_manifest.sh -d streetclub -t day-night
