@@ -55,8 +55,8 @@ install: all
 uninstall:
 	rm -f $(addprefix $(PREFIX)/share/wallpapers/$(PROGRAM)/, $(DATA))
 	rm -f $(addprefix $(PREFIX)/share/wallpapers/$(PROGRAM)/contents/images/, $(notdir $(BACKGROUNDS)))
-	rmdir --ignore-fail-on-empty $(PREFIX)/share/wallpapers/$(PROGRAM)
-	rmdir --ignore-fail-on-empty $(PREFIX)/share/wallpapers/
+	rmdir --ignore-fail-on-non-empty $(PREFIX)/share/wallpapers/$(PROGRAM)
+	rmdir --ignore-fail-on-non-empty $(PREFIX)/share/wallpapers/
 
 .PHONY: clean
 
