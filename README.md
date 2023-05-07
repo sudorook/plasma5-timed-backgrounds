@@ -41,12 +41,12 @@ Available backgrounds:
 
 ## Installation
 
-### Install the KDE Dynamic Wallpaper Engine
+### 1. Install the KDE Dynamic Wallpaper Engine
 
 Follow the instructions provided on the [wallpaper
 engine](https://github.com/zzag/plasma5-wallpapers-dynamic) site.
 
-### Download backgrounds images
+### 2. Download backgrounds images
 
 Most of the backgrounds listed above are not licensed for redistribution, so
 use the `download_images.sh` script to get them yourself.
@@ -54,7 +54,7 @@ use the `download_images.sh` script to get them yourself.
 ./download_images.sh
 ```
 
-### Build AVIF files and install
+### 3. Build AVIF files and install
 
 To build and install the backgrounds, run:
 ```bash
