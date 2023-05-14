@@ -1,36 +1,40 @@
 {
-    "Type": "solar",
-    "Meta": [
-        {
-            "SolarAzimuth": 0,
-            "SolarElevation": -90,
-            "CrossFade": false,
-            "Time": "05:00",
-            "FileName": "24hours-night.jpg"
-        }, {
-            "SolarAzimuth": 90,
-            "SolarElevation": -4.5,
-            "CrossFade": false,
-            "Time": "06:00",
-            "FileName": "24hours-morning.jpg"
-        }, {
-            "SolarAzimuth": 90,
-            "SolarElevation": 16.5,
-            "CrossFade": false,
-            "Time": "07:00",
-            "FileName": "24hours-day.jpg"
-        }, {
-            "SolarAzimuth": 270,
-            "SolarElevation": 16.5,
-            "CrossFade": false,
-            "Time": "17:00",
-            "FileName": "24hours-evening.jpg"
-        }, {
-            "SolarAzimuth": 270,
-            "SolarElevation": -4.5,
-            "CrossFade": false,
-            "Time": "18:00",
-            "FileName": "24hours-night.jpg"
-        }
-    ]
+  "Type": "solar",
+  "Meta": [
+    {
+      "SolarAzimuth": 0,
+      "SolarElevation": -90,
+      "CrossFade": false,
+      "Time": "05:00",
+      "FileName": "24hours-night.jpg"
+    },
+    {
+      "SolarAzimuth": 90,
+      "SolarElevation": -4.5,
+      "CrossFade": false,
+      "Time": "06:00",
+      "FileName": "24hours-morning.jpg"
+    },
+    {
+      "SolarAzimuth": 90,
+      "SolarElevation": 16.5,
+      "CrossFade": false,
+      "Time": "07:00",
+      "FileName": "24hours-day.jpg"
+    },
+    {
+      "SolarAzimuth": 270,
+      "SolarElevation": 16.5,
+      "CrossFade": false,
+      "Time": "17:00",
+      "FileName": "24hours-evening.jpg"
+    },
+    {
+      "SolarAzimuth": 270,
+      "SolarElevation": -4.5,
+      "CrossFade": false,
+      "Time": "18:00",
+      "FileName": "24hours-night.jpg"
+    }
+  ]
 }

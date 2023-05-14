@@ -58,7 +58,6 @@ while [ ${#} -ge 1 ]; do
   esac
 done
 
-
 # Defaults and checks
 NAME="${NAME:-$(basename "${DIR}")}"
 IMG="${IMG:-jpg}"

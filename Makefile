@@ -62,4 +62,3 @@ uninstall:
 
 clean:
 	-rm -f $(BACKGROUNDS)
-
