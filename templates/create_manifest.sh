@@ -5,6 +5,30 @@ ROOT="$(dirname "${0}")"
 
 # Functions
 
+# Colored prompt for error messages.
+show_error() {
+  echo -e $'\033[1;31m'"$*"$'\033[0m' 1>&2
+}
+export -f show_error
+
+# Check if list of command-line programs are in the PATH.
+check_command() {
+  local package
+  local missing=()
+  for package in "${@}"; do
+    if ! command -v "${package}" >/dev/null; then
+      missing+=("${package}")
+    fi
+  done
+  if [ ${#missing[@]} -eq 0 ]; then
+    return 0
+  else
+    show_error "MISSING: ${missing[*]@Q} not installed."
+    return 1
+  fi
+}
+export -f check_command
+
 function make_manifest {
   local file="${1}"
   local suffix
@@ -23,6 +47,8 @@ function make_manifest {
     echo "Updated ${DIR}/${NAME}.json."
   fi
 }
+
+! check_command diff sed && exit 3
 
 OPTIONS=d:n:i:t:
 LONGOPTIONS=dir:,name:,image:,type:
