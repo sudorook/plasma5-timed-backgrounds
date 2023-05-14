@@ -63,6 +63,7 @@ function download_bg {
         echo "'${dir}/${dir}-${key}.jpg' already exists."
       fi
     done
+    unset BG
   else
     echo "No data file in ${dir@Q}. Skipping..."
   fi

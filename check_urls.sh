@@ -79,6 +79,7 @@ function check_urls {
         show_error "${key}: ${BG[${key}]}"
       fi
     done
+    unset BG
     sleep "$((RANDOM % 5 + 5))"
   else
     show_warning "No data file in ${dir@Q}. Skipping..."
