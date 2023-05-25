@@ -1,37 +1,7 @@
 #! /bin/bash
 set -eu
 
-DIRS=(24hours
-  akihabarasouthexit
-  catherineroom
-  corporationhall
-  corporationstreet
-  elliemansion
-  himitsuhouse
-  himitsuhouseinterior
-  island
-  japanesegarden
-  japanesevillagehouse
-  japanesevillagehouseinterior
-  jrstation
-  kagomeroom
-  kumoha103train
-  kyosukeroom
-  mechanicalcity
-  michaelroom
-  oldhouse
-  oldhouselivingdiningrooms
-  oldhouseroom
-  restaurantinterior
-  restaurantstreet
-  riverside
-  riversidebridge
-  ryokanroom
-  smalljapaneseprovincialtown
-  streetclub
-  tokyostreet
-  twoqueenscities
-  yunjingcity)
+readarray -t DIRS < "data"
 
 # Check if list of command-line programs are in the PATH.
 check_command() {

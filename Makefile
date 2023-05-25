@@ -2,42 +2,7 @@ PREFIX ?= /usr
 
 PROGRAM ?= Timed
 DATA = metadata.json
-DIRS = \
-	24hours \
-	akihabarasouthexit \
-	catherineroom \
-	corporationstreet \
-	corporationhall \
-	elliemansion \
-	firewatch \
-	himitsuhouse \
-	himitsuhouseinterior \
-	island \
-	japanesegarden \
-	japanesevillagehouse \
-	japanesevillagehouseinterior \
-	jrstation \
-	kagomeroom \
-	kumoha103train \
-	kyosukeroom \
-	mechanicalcity \
-	metropolis \
-	michaelroom \
-	mountainside \
-	oldhouse \
-	oldhouselivingdiningrooms \
-	oldhouseroom \
-	restaurantinterior \
-	restaurantstreet \
-	riverside \
-	riversidebridge \
-	ryokanroom \
-	smalljapaneseprovincialtown \
-	streetclub \
-	tokyostreet \
-	twoqueenscities \
-	yunjingcity
-
+DIRS = $(shell cat data) firewatch metropolis mountainside
 BACKGROUNDS = $(foreach background, $(DIRS), $(join $(background), /$(background).avif))
 
 .PHONY: all

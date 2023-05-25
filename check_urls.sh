@@ -1,36 +1,7 @@
 #! /bin/bash
 set -eu
 
-DIRS=(24hours
-  akihabarasouthexit
-  catherineroom
-  corporationhall
-  corporationstreet
-  elliemansion
-  himitsuhouse
-  himitsuhouseinterior
-  island
-  japanesegarden
-  japanesevillagehouse
-  japanesevillagehouseinterior
-  jrstation
-  kagomeroom
-  kumoha103train
-  kyosukeroom
-  mechanicalcity
-  michaelroom
-  oldhouse
-  oldhouselivingdiningrooms
-  restaurantinterior
-  restaurantstreet
-  riverside
-  riversidebridge
-  ryokanroom
-  smalljapaneseprovincialtown
-  streetclub
-  tokyostreet
-  twoqueenscities
-  yunjingcity)
+readarray -t DIRS < "data"
 
 function show_success {
   echo -e $'\033[1;35m✓ \033[0m'"$*"
