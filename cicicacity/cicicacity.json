@@ -1,0 +1,33 @@
+{
+  "Type": "solar",
+  "Meta": [
+    {
+      "SolarAzimuth": 90,
+      "SolarElevation": -12,
+      "CrossFade": true,
+      "Time": "06:00",
+      "FileName": "cicicacity-night.jpg"
+    },
+    {
+      "SolarAzimuth": 90,
+      "SolarElevation": 12,
+      "CrossFade": false,
+      "Time": "07:00",
+      "FileName": "cicicacity-day.jpg"
+    },
+    {
+      "SolarAzimuth": 270,
+      "SolarElevation": 12,
+      "CrossFade": true,
+      "Time": "17:00",
+      "FileName": "cicicacity-day.jpg"
+    },
+    {
+      "SolarAzimuth": 270,
+      "SolarElevation": -12,
+      "CrossFade": false,
+      "Time": "19:00",
+      "FileName": "cicicacity-night.jpg"
+    }
+  ]
+}
