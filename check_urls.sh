@@ -1,23 +1,10 @@
 #! /bin/bash
 set -eu
 
-readarray -t DIRS < "data"
+ROOT="$(dirname "${0}")"
+source "${ROOT}"/globals
 
-function show_success {
-  echo -e $'\033[1;35m✓ \033[0m'"$*"
-}
-
-function show_header {
-  echo -e $'\033[1;36m'"$*"$'\033[0m'
-}
-
-function show_error {
-  echo -e $'\033[1;31m✗ '"$*"$'\033[0m' 1>&2
-}
-
-function show_warning {
-  echo -e $'\033[1;33m'"$*"$'\033[0m'
-}
+readarray -t DIRS < "${ROOT}/data"
 
 # Check if list of command-line programs are in the PATH.
 check_command() {

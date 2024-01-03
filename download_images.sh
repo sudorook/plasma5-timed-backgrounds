@@ -1,7 +1,10 @@
 #! /bin/bash
 set -eu
 
-readarray -t DIRS < "data"
+ROOT="$(dirname "${0}")"
+source "${ROOT}"/globals
+
+readarray -t DIRS < "${ROOT}/data"
 
 # Check if list of command-line programs are in the PATH.
 check_command() {
