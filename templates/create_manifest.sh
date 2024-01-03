@@ -17,7 +17,7 @@ function make_manifest {
     suffix=4k
   fi
   newmanifest="$(sed -e "s/\(\"FileName\":\) \"\(.*\)\"/\1 \"${name}-\2${suffix:+-${suffix}}\.${IMG}\"/g" "${file}")"
-  if diff <(echo "${newmanifest}") "${DIR}/${NAME}.json" >/dev/null; then
+  if diff <(echo "${newmanifest}") "${DIR}/${NAME}.json" > /dev/null; then
     show_success "No changes to ${DIR}/${NAME}.json."
   else
     show_info "${newmanifest}" > "${DIR}/${NAME}.json"
@@ -34,19 +34,19 @@ eval set -- "${PARSED}"
 
 while [ ${#} -ge 1 ]; do
   case "${1}" in
-    -d|--dir)
+    -d | --dir)
       DIR="${2}"
       shift 2
       ;;
-    -n|--name)
+    -n | --name)
       NAME="${2}"
       shift 2
       ;;
-    -i|--image)
+    -i | --image)
       IMG="${2}"
       shift 2
       ;;
-    -t|--type)
+    -t | --type)
       TYPE="${2}"
       shift 2
       ;;
@@ -68,19 +68,19 @@ IMG="${IMG:-jpg}"
 [ -z "${TYPE}" ] && exit 3
 
 case "${TYPE,,}" in
-  day-night|daynight)
+  day-night | daynight)
     make_manifest "${ROOT}"/day-night.json
     ;;
-  day-sunset-night|daysunsetnight)
+  day-sunset-night | daysunsetnight)
     make_manifest "${ROOT}"/day-sunset-night.json
     ;;
-  morning-day-sunset-night|morningddaysunsetnight)
+  morning-day-sunset-night | morningddaysunsetnight)
     make_manifest "${ROOT}"/morning-day-sunset-night.json
     ;;
-  morning-day-sunset-night-static|morningdaysunsetnightstatic|morning-day-sunset-night_static|morning-day-sunset-night-fixed|morningdaysunsetnightfixed|morning-day-sunset-night_fixed)
+  morning-day-sunset-night-static | morningdaysunsetnightstatic | morning-day-sunset-night_static | morning-day-sunset-night-fixed | morningdaysunsetnightfixed | morning-day-sunset-night_fixed)
     make_manifest "${ROOT}"/morning-day-sunset-night_fixed.json
     ;;
-  morning-day-evening-night-static|morningdayeveningnightstatic|morning-day-evening-night_static|morning-day-evening-night-fixed|morningdayeveningnightfixed|morning-day-evening-night_fixed)
+  morning-day-evening-night-static | morningdayeveningnightstatic | morning-day-evening-night_static | morning-day-evening-night-fixed | morningdayeveningnightfixed | morning-day-evening-night_fixed)
     make_manifest "${ROOT}"/morning-day-evening-night_fixed.json
     ;;
   *)

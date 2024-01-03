@@ -11,7 +11,7 @@ check_command() {
   local package
   local missing=()
   for package in "${@}"; do
-    if ! command -v "${package}" >/dev/null; then
+    if ! command -v "${package}" > /dev/null; then
       missing+=("${package}")
     fi
   done
