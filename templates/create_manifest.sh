@@ -18,10 +18,10 @@ function make_manifest {
   fi
   newmanifest="$(sed -e "s/\(\"FileName\":\) \"\(.*\)\"/\1 \"${name}-\2${suffix:+-${suffix}}\.${IMG}\"/g" "${file}")"
   if diff <(echo "${newmanifest}") "${DIR}/${NAME}.json" >/dev/null; then
-    echo "No changes to ${DIR}/${NAME}.json."
+    show_success "No changes to ${DIR}/${NAME}.json."
   else
-    echo "${newmanifest}" > "${DIR}/${NAME}.json"
-    echo "Updated ${DIR}/${NAME}.json."
+    show_info "${newmanifest}" > "${DIR}/${NAME}.json"
+    show_success "Updated ${DIR}/${NAME}.json."
   fi
 }
 
@@ -84,7 +84,7 @@ case "${TYPE,,}" in
     make_manifest "${ROOT}"/morning-day-evening-night_fixed.json
     ;;
   *)
-    echo "ERROR: ${TYPE@Q} not understood. Exiting."
+    show_error "ERROR: ${TYPE@Q} not understood. Exiting."
     exit 3
     ;;
 esac
