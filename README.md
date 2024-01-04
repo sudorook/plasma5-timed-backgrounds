@@ -9,6 +9,7 @@ Available backgrounds:
 - 24 hours (by [Arzamas](https://www.deviantart.com/arzamas/gallery))
 - Akihabara South Exit (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
 - Catherine Room (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
+- Cicica City (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
 - Corporation Hall (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
 - Corporation Street (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
 - Ellie Mansion (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
@@ -31,6 +32,7 @@ Available backgrounds:
 - Kyosuke Room (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
 - Mechanical City (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
 - Metropolis (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
+- Mermaid Sea Market (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
 - Michael Room (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
 - Mountainside (by [???](https://imgur.com/a/vqb7Q))
 - Old House (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
@@ -47,6 +49,7 @@ Available backgrounds:
 - Tokyo Street and Club (by
   [arsenixc](https://arsenixc.deviantart.com/gallery/))
 - Two Queens Cities (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
+- Valentin Music City (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
 - Yunjing City (by [arsenixc](https://arsenixc.deviantart.com/gallery/))
 
 ## Installation
