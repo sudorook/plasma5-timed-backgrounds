@@ -1,0 +1,11 @@
+#! /bin/bash
+
+# Look for different variant of night, one that is less apocapyptic. The
+# original 'crisis' variant has buildings with the wrong proportions, so it is
+# not usable.
+declare -A BG
+BG["morning"]="https://cdna.artstation.com/p/assets/images/images/066/891/868/4k/arseniy-chebynkin-rabbit-big-bright.jpg"
+BG["day"]="https://cdna.artstation.com/p/assets/images/images/066/887/052/4k/arseniy-chebynkin-rabbit-big.jpg"
+BG["evening"]="https://cdna.artstation.com/p/assets/images/images/066/891/880/4k/arseniy-chebynkin-rabbit-big-brigh-v2.jpg"
+BG["night"]="https://cdnb.artstation.com/p/assets/images/images/067/571/249/4k/arseniy-chebynkin-rabbit-big-crisis-v2.jpg"
+export BG
