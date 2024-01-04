@@ -67,20 +67,20 @@ IMG="${IMG:-jpg}"
 ! [ -d "${DIR}" ] && exit 3
 [ -z "${TYPE}" ] && exit 3
 
-case "${TYPE,,}" in
-  day-night | daynight)
+case "${TYPE//_/-}" in
+  day-night)
     make_manifest "${ROOT}"/day-night.json
     ;;
-  day-sunset-night | daysunsetnight)
+  day-sunset-night)
     make_manifest "${ROOT}"/day-sunset-night.json
     ;;
-  morning-day-sunset-night | morningddaysunsetnight)
+  morning-day-sunset-night)
     make_manifest "${ROOT}"/morning-day-sunset-night.json
     ;;
-  morning-day-sunset-night-static | morningdaysunsetnightstatic | morning-day-sunset-night_static | morning-day-sunset-night-fixed | morningdaysunsetnightfixed | morning-day-sunset-night_fixed)
+  morning-day-sunset-night-static | morning-day-sunset-night-fixed)
     make_manifest "${ROOT}"/morning-day-sunset-night_fixed.json
     ;;
-  morning-day-evening-night-static | morningdayeveningnightstatic | morning-day-evening-night_static | morning-day-evening-night-fixed | morningdayeveningnightfixed | morning-day-evening-night_fixed)
+  morning-day-evening-night-static | morning-day-evening-night-fixed)
     make_manifest "${ROOT}"/morning-day-evening-night_fixed.json
     ;;
   *)
