@@ -33,12 +33,12 @@ function check_urls {
     for key in "${!BG[@]}"; do
       if wget --quiet --method=HEAD "${BG[${key}]}"; then
         show_success "${key}: ${BG[${key}]}"
+        sleep "$((RANDOM % 5 + 5))"
       else
         show_error "${key}: ${BG[${key}]}"
       fi
     done
     unset BG
-    sleep "$((RANDOM % 5 + 5))"
   else
     show_warning "No data file in ${dir@Q}. Skipping..."
   fi
