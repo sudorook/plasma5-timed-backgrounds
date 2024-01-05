@@ -26,12 +26,22 @@ export -f check_command
 
 function download_bg {
   local dir="${1}"
+  local file
   local key
   if [ -f "${dir}/data" ]; then
     source "${dir}/data"
     for key in "${!BG[@]}"; do
-      if wget --quiet --show-progress -nc -c -O "${dir}/${dir}-${key}.jpg" "${BG[${key}]}"; then
-        sleep "$((RANDOM % 5 + 5))"
+      file="${dir}/${dir}-${key}.jpg"
+      if ! [ -f "${file}" ]; then
+        show_info -n "Downloading ${file@Q}..."
+        if curl -s -C - -o "${file}" "${BG[${key}]}"; then
+          sleep "$((RANDOM % 5 + 5))"
+          show_info -n "done."
+        else
+          echo
+          show_error "ERROR: failed to download ${file@Q}."
+          exit 3
+        fi
       else
         echo "'${dir}/${dir}-${key}.jpg' already exists."
       fi
@@ -42,7 +52,7 @@ function download_bg {
   fi
 }
 
-! check_command wget && exit 3
+! check_command curl && exit 3
 
 for DIR in "${DIRS[@]}"; do
   download_bg "${DIR}"

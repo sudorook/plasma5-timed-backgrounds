@@ -31,7 +31,7 @@ function check_urls {
     source "${dir}/data"
     show_header "Checking ${dir}..."
     for key in "${!BG[@]}"; do
-      if wget --quiet --method=HEAD "${BG[${key}]}"; then
+      if curl -ILs --retry 5 --retry-connrefused "${BG[${key}]}" > /dev/null; then
         show_success "${key}: ${BG[${key}]}"
         sleep "$((RANDOM % 5 + 5))"
       else
@@ -45,7 +45,7 @@ function check_urls {
   echo
 }
 
-! check_command wget && exit 3
+! check_command curl && exit 3
 
 for DIR in "${DIRS[@]}"; do
   check_urls "${DIR}"
