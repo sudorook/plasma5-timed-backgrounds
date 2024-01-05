@@ -1,40 +1,47 @@
-{
+[0;92m{
   "Type": "solar",
   "Meta": [
     {
-      "SolarAzimuth": 0,
-      "SolarElevation": -90,
-      "CrossFade": false,
-      "Time": "05:00",
+      "SolarAzimuth": 90,
+      "SolarElevation": -12,
+      "CrossFade": true,
+      "Time": "06:00",
       "FileName": "mermaidseamarket-night.jpg"
     },
     {
       "SolarAzimuth": 90,
-      "SolarElevation": -4.5,
-      "CrossFade": false,
-      "Time": "06:00",
+      "SolarElevation": 6,
+      "CrossFade": true,
+      "Time": "07:00",
       "FileName": "mermaidseamarket-morning.jpg"
     },
     {
       "SolarAzimuth": 90,
-      "SolarElevation": 16.5,
+      "SolarElevation": 24,
       "CrossFade": false,
-      "Time": "07:00",
+      "Time": "08:00",
       "FileName": "mermaidseamarket-day.jpg"
     },
     {
       "SolarAzimuth": 270,
-      "SolarElevation": 16.5,
-      "CrossFade": false,
+      "SolarElevation": 24,
+      "CrossFade": true,
       "Time": "17:00",
-      "FileName": "mermaidseamarket-evening.jpg"
+      "FileName": "mermaidseamarket-day.jpg"
     },
     {
       "SolarAzimuth": 270,
-      "SolarElevation": -4.5,
-      "CrossFade": false,
+      "SolarElevation": 6,
+      "CrossFade": true,
       "Time": "18:00",
+      "FileName": "mermaidseamarket-sunset.jpg"
+    },
+    {
+      "SolarAzimuth": 270,
+      "SolarElevation": -12,
+      "CrossFade": false,
+      "Time": "19:00",
       "FileName": "mermaidseamarket-night.jpg"
     }
   ]
-}
+}[0m
