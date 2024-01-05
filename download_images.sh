@@ -48,7 +48,7 @@ function download_bg {
     done
     unset BG
   else
-    echo "No data file in ${dir@Q}. Skipping..."
+    show_warning "No data file in ${dir@Q}. Skipping..."
   fi
 }
 
