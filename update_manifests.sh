@@ -19,6 +19,7 @@ set -eu
 ./templates/create_manifest.sh -d kumoha103train -t day-night
 ./templates/create_manifest.sh -d kyosukeroom -t day-sunset-night
 ./templates/create_manifest.sh -d mechanicalcity -t day-night
+./templates/create_manifest.sh -d mermaidseamarket -t morning-day-sunset-night
 ./templates/create_manifest.sh -d metropolis -t day-night
 ./templates/create_manifest.sh -d michaelroom -t day-sunset-night
 ./templates/create_manifest.sh -d mountainside -t day-night
@@ -34,4 +35,5 @@ set -eu
 ./templates/create_manifest.sh -d streetclub -t day-night
 ./templates/create_manifest.sh -d tokyostreet -t day-sunset-night
 ./templates/create_manifest.sh -d twoqueenscities -t day-night
+./templates/create_manifest.sh -d valentinmusiccity -t day-night
 ./templates/create_manifest.sh -d yunjingcity -t day-night
