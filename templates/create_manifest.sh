@@ -20,7 +20,7 @@ function make_manifest {
   if diff <(echo "${newmanifest}") "${DIR}/${NAME}.json" > /dev/null; then
     show_success "No changes to ${DIR}/${NAME}.json."
   else
-    show_info "${newmanifest}" > "${DIR}/${NAME}.json"
+    echo "${newmanifest}" > "${DIR}/${NAME}.json"
     show_success "Updated ${DIR}/${NAME}.json."
   fi
 }
