@@ -67,24 +67,23 @@ IMG="${IMG:-jpg}"
 ! [ -d "${DIR}" ] && exit 3
 [ -z "${TYPE}" ] && exit 3
 
+shopt -s extglob
 case "${TYPE//_/-}" in
   day-night)
     make_manifest "${ROOT}"/day-night.json
     ;;
-  day-sunset-night)
+  day-@(evening|sunset)-night)
     make_manifest "${ROOT}"/day-sunset-night.json
     ;;
-  morning-day-sunset-night)
+  @(morning|sunrise)-day-@(evening|sunset)-night)
     make_manifest "${ROOT}"/morning-day-sunset-night.json
     ;;
-  morning-day-sunset-night-static | morning-day-sunset-night-fixed)
+  @(morning|sunrise)-day-@(evening|sunset)-night-@(fixed|static))
     make_manifest "${ROOT}"/morning-day-sunset-night_fixed.json
-    ;;
-  morning-day-evening-night-static | morning-day-evening-night-fixed)
-    make_manifest "${ROOT}"/morning-day-evening-night_fixed.json
     ;;
   *)
     show_error "ERROR: ${TYPE@Q} not understood. Exiting."
     exit 3
     ;;
 esac
+shopt -u extglob
