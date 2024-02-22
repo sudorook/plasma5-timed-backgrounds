@@ -2,27 +2,12 @@
 set -eu
 
 ROOT="$(dirname "${0}")"
+
 source "${ROOT}"/globals
 
-readarray -t DIRS < "${ROOT}/data"
+! check_command curl && exit 3
 
-# Check if list of command-line programs are in the PATH.
-check_command() {
-  local package
-  local missing=()
-  for package in "${@}"; do
-    if ! command -v "${package}" > /dev/null; then
-      missing+=("${package}")
-    fi
-  done
-  if [ ${#missing[@]} -eq 0 ]; then
-    return 0
-  else
-    show_error "MISSING: ${missing[*]@Q} not installed."
-    return 1
-  fi
-}
-export -f check_command
+readarray -t DIRS < "${ROOT}/data"
 
 function check_urls {
   local dir="${1}"
@@ -44,8 +29,6 @@ function check_urls {
     show_warning "No data file in ${dir@Q}. Skipping..."
   fi
 }
-
-! check_command curl && exit 3
 
 for DIR in "${DIRS[@]}"; do
   check_urls "${DIR}"
