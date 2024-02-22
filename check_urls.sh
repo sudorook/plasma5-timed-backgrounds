@@ -43,7 +43,6 @@ function check_urls {
   else
     show_warning "No data file in ${dir@Q}. Skipping..."
   fi
-  echo
 }
 
 ! check_command curl && exit 3
