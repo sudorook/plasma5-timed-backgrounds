@@ -36,7 +36,7 @@ function download_bg {
         show_info -n "Downloading ${file@Q}..."
         if curl -s -C - -o "${file}" "${BG[${key}]}"; then
           sleep "$((RANDOM % 5 + 5))"
-          show_info -n "done."
+          show_info " done."
         else
           echo
           show_error "ERROR: failed to download ${file@Q}."
