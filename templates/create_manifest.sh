@@ -2,9 +2,14 @@
 set -eu
 
 ROOT="$(dirname "${0}")"
+
 source "${ROOT}"/../globals
 
+! check_command cmp sed && exit 3
+
+#
 # Functions
+#
 
 function make_manifest {
   local file="${1}"
@@ -25,7 +30,9 @@ function make_manifest {
   fi
 }
 
-! check_command diff sed && exit 3
+#
+# Main
+#
 
 OPTIONS=d:n:i:t:
 LONGOPTIONS=dir:,name:,image:,type:
