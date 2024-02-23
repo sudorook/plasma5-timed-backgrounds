@@ -5,7 +5,7 @@ ROOT="$(dirname "${0}")"
 
 source "${ROOT}"/../globals
 
-! check_command cmp sed && exit 3
+! check_command bc cmp find sed && exit 3
 
 #
 # Functions
@@ -28,6 +28,60 @@ function make_manifest {
     echo "${newmanifest}" > "${DIR}/${NAME}.json"
     show_success "Updated ${DIR}/${NAME}.json."
   fi
+}
+
+function make_equal_manifest {
+  local name="${NAME}"
+  local count
+  local idx
+  local interval
+  count="$(find "${DIR}" -type f -iname "*.${IMG}" -print | wc -l)"
+  interval="$(echo "60 * 24 / ${count}" | bc -l)"
+  {
+    cat << EOF
+{
+  "Type": "solar",
+  "Meta": [
+EOF
+    for idx in $(seq 1 "${count}"); do
+      if [ "${idx}" -eq "${count}" ]; then
+        cat << EOF
+    {
+      "CrossFade": true,
+      "Time": "$(min_to_hhmm "${idx}" "${interval}" "${count}")",
+      "FileName": "${NAME}-${idx}.${IMG}"
+    }
+EOF
+      else
+        cat << EOF
+    {
+      "CrossFade": true,
+      "Time": "$(min_to_hhmm "${idx}" "${interval}" "${count}")",
+      "FileName": "${NAME}-${idx}.${IMG}"
+    },
+EOF
+      fi
+    done
+    cat << EOF
+  ]
+}
+EOF
+  } > "${DIR}/${NAME}.json"
+}
+
+function min_to_hhmm {
+  local idx="${1}"
+  local interval="${2}"
+  local count="${3}"
+
+  local min
+  if [ "${idx}" -eq "${count}" ]; then
+    min="$(echo "24 * 60 - ${interval}" | bc -l)"
+  else
+    min="$(echo "(${idx} - 1) * ${interval}" | bc -l)"
+  fi
+  printf -v min "%.0f\n" "${min}"
+  TZ=UTC date -d "$(TZ=UTC date -d "@0") + ${min} minutes" "+%H:%M"
 }
 
 #
@@ -87,6 +141,9 @@ case "${TYPE//_/-}" in
     ;;
   @(morning|sunrise)-day-@(evening|sunset)-night-@(fixed|static))
     make_manifest "${ROOT}"/morning-day-sunset-night_fixed.json
+    ;;
+  equal)
+    make_equal_manifest
     ;;
   *)
     show_error "ERROR: ${TYPE@Q} not understood. Exiting."
