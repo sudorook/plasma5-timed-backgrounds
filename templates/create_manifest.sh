@@ -22,7 +22,7 @@ function make_manifest {
     suffix=4k
   fi
   newmanifest="$(sed -e "s/\(\"FileName\":\) \"\(.*\)\"/\1 \"${name}-\2${suffix:+-${suffix}}\.${IMG}\"/g" "${file}")"
-  if diff <(echo "${newmanifest}") "${DIR}/${NAME}.json" > /dev/null; then
+  if [ -f "${DIR}/${NAME}.json" ] && cmp -s <(echo "${newmanifest}") "${DIR}/${NAME}.json"; then
     show_success "No changes to ${DIR}/${NAME}.json."
   else
     echo "${newmanifest}" > "${DIR}/${NAME}.json"
