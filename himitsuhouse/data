@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # The variant without the rain puddles (from 2017) does not have a
-# higher-resolution version avaialble, so use the other one.
+# higher-resolution version available, so use the other one.
 # BG["sunset"]="https://cdnb.artstation.com/p/assets/images/images/007/820/059/4k/arseniy-chebynkin-himisunset.jpg"
 
 declare -A BG
